@@ -19,6 +19,22 @@ public class DailyWeather {
         this.climaManana = climaManana;
     }
 
+    public int getImagenManana() {
+        return imagenManana;
+    }
+
+    public void setImagenManana(int imagenManana) {
+        this.imagenManana = imagenManana;
+    }
+
+    public String getClimaManana() {
+        return climaManana;
+    }
+
+    public void setClimaManana(String climaManana) {
+        this.climaManana = climaManana;
+    }
+
     public String getCiudad() {
         return ciudad;
     }

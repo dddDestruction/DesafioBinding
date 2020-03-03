@@ -2,7 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <data>
+        <variable
+            name="info"
+            type="cl.desafiolatam.desafiobinding.DailyWeather" />
+        
+    </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Santiago"
+        android:text="@{info.ciudad}"
         style="@style/Header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="10-02-2020"
+        android:text="@{info.fecha}"
         style="@style/SubHeader"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +52,7 @@
         android:id="@+id/textTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="16"
+        android:text="@{info.temperatura}"
         style="@style/Header"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +64,7 @@
         android:id="@+id/textUnidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ºC"
+        android:text="@{info.unidad}"
         style="@style/Header"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintBottom_toBottomOf="parent"

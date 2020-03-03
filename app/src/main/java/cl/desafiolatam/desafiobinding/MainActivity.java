@@ -1,5 +1,6 @@
 package cl.desafiolatam.desafiobinding;
 
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -13,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding= DataBindingUtil.setContentView(this, R.layout.activity_main);
-
+        binding.imageView.setImageResource(R.drawable.ic_launcher_background);
     }
 }

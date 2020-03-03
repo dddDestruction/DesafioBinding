@@ -6,13 +6,17 @@ public class DailyWeather {
     protected int imagen;
     protected String temperatura;
     protected String unidad;
+    protected int imagenManana;
+    protected String climaManana;
 
-    public DailyWeather(String ciudad, String fecha, int imagen, String temperatura, String unidad) {
+    public DailyWeather(String ciudad, String fecha, int imagen, String temperatura, String unidad, int imagenManana, String climaManana) {
         this.ciudad = ciudad;
         this.fecha = fecha;
         this.imagen = imagen;
         this.temperatura = temperatura;
         this.unidad = unidad;
+        this.imagenManana = imagenManana;
+        this.climaManana = climaManana;
     }
 
     public String getCiudad() {

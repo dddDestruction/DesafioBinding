@@ -14,7 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding= DataBindingUtil.setContentView(this, R.layout.activity_main);
-        DailyWeather clima = new DailyWeather("Talca", "03-03-2020", R.drawable.ic_wb_sunny_black_24dp, "16", "ºC");
+        DailyWeather clima = new DailyWeather("Talca",
+                "03-03-2020",
+                R.drawable.ic_wb_sunny_black_24dp,
+                "16", "ºC",
+                R.drawable.ic_cloud_black_24dp,
+                "1º / 17º");
         binding.setInfo(clima);
     }
 }
